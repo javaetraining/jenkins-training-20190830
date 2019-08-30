@@ -1,6 +1,6 @@
 package com.javaetraining.springmvc.configuration;
 
-import java.io.IOException;
+import java.io.IOException;-
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
