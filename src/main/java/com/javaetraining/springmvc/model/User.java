@@ -3,18 +3,18 @@ package com.javaetraining.springmvc.model;
 public class User {
 
 	private long id;
-	
+
 	private String username;
-	
+
 	private String address;
-	
+
 	private String email;
-	
-	public User(){
-		id=0;
+
+	public User() {
+		id = 0;
 	}
-	
-	public User(long id, String username, String address, String email){
+
+	public User(long id, String username, String address, String email) {
 		this.id = id;
 		this.username = username;
 		this.address = address;
@@ -63,24 +63,26 @@ public class User {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if (this == obj) {
 			return true;
-		if (obj == null)
+		}
+		if (obj == null) {
 			return false;
-		if (!(obj instanceof User))
+
+		}
+		if (!(obj instanceof User)) {
 			return false;
+		}
 		User other = (User) obj;
-		if (id != other.id)
+		if (id != other.id) {
 			return false;
+		}
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", address=" + address
-				+ ", email=" + email + "]";
+		return "User [id=" + id + ", username=" + username + ", address=" + address + ", email=" + email + "]";
 	}
-	
 
-	
 }
