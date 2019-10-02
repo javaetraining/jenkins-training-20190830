@@ -23,7 +23,6 @@ public class HelloWorldRestController {
     @Autowired
     UserService userService;  //Service which will do all data retrieval/manipulation work
  
-    
     //-------------------Retrieve All Users--------------------------------------------------------
      
     @RequestMapping(value = "/user/", method = RequestMethod.GET)
